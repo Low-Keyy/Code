@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<int> nums = {10,20,30,5,10,50};
+
+class Solution {
+public:
+    int maxAscendingSum(vector<int>& nums) {
+        
+    }
+};
+
+int main(int argc, char const *argv[])
+{
+    Solution solution;
+    printf("%d",solution.maxAscendingSum(nums));
+    return 0;
+}

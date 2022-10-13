@@ -1,0 +1,43 @@
+"D:\Clion\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\workplace\leetcode\215
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
+-- Check for working C compiler: D:/Clion/mingw64/bin/gcc.exe
+-- Check for working C compiler: D:/Clion/mingw64/bin/gcc.exe - broken
+CMake Error at D:/Clion/CLion 2020.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeTestCCompiler.cmake:60 (message):
+  The C compiler
+
+    "D:/Clion/mingw64/bin/gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: D:/workplace/leetcode/215/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):D:/Clion/mingw64/bin/mingw32-make.exe cmTC_0dbaf/fast && D:/Clion/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_0dbaf.dir\build.make CMakeFiles/cmTC_0dbaf.dir/build
+    mingw32-make.exe[1]: Entering directory 'D:/workplace/leetcode/215/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Building C object CMakeFiles/cmTC_0dbaf.dir/testCCompiler.c.obj
+    D:\Clion\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_0dbaf.dir\testCCompiler.c.obj   -c D:\workplace\leetcode\215\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+    Linking C executable cmTC_0dbaf.exe
+    "D:\Clion\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0dbaf.dir\link.txt --verbose=1
+    "D:\Clion\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_0dbaf.dir/objects.a
+    D:\Clion\mingw64\bin\ar.exe cr CMakeFiles\cmTC_0dbaf.dir/objects.a @CMakeFiles\cmTC_0dbaf.dir\objects1.rsp
+    D:\Clion\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_0dbaf.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0dbaf.exe -Wl,--out-implib,libcmTC_0dbaf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0dbaf.dir\linklibs.rsp
+    D:/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find @C:\Windows\TEMP\ccEEriLH: Invalid argument
+    collect2.exe: error: ld returned 1 exit status
+    mingw32-make.exe[1]: *** [CMakeFiles\cmTC_0dbaf.dir\build.make:108: cmTC_0dbaf.exe] Error 1
+    mingw32-make.exe[1]: Leaving directory 'D:/workplace/leetcode/215/cmake-build-debug/CMakeFiles/CMakeTmp'
+    mingw32-make.exe: *** [Makefile:140: cmTC_0dbaf/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/workplace/leetcode/215/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "D:/workplace/leetcode/215/cmake-build-debug/CMakeFiles/CMakeError.log".
