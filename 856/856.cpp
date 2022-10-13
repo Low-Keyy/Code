@@ -7,7 +7,7 @@ class Solution {
 public:
     int scoreOfParentheses(string s){
         stack<int> pteStack;
-        for(auto v:s){
+        for(auto &v:s){
             if(v =='('){
                 pteStack.push(-1);
             }else{
@@ -26,13 +26,18 @@ public:
             }
 
         }
-        return pteStack.top();
+        int ans=0;
+        while(!pteStack.empty()){
+            ans+=pteStack.top();
+            pteStack.pop();
+        }
+        return ans;
     }
 };
 
 int main(int argc, char const *argv[])
 {
-    string s="(()(()))" ;
+    string s="()" ;
     Solution solution;
     cout<<solution.scoreOfParentheses(s)<<endl;
     return 0;

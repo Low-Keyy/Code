@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Solution {
+public:
+    int maxChunksToSorted(vector<int>& arr) {
+        int count = 0;
+        int size = arr.size();
+        int index = 0;
+        while(index < size){
+            count++;
+            int min = arr[index];
+            for(int i = index;i<size-1;i++){
+                if(arr[i] < min){
+                    min = arr[i]
+                    index = i+1;
+                }
+                }
+            }
+        }
+        return count;
+    }
+};
